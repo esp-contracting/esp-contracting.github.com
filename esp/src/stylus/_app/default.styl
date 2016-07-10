@@ -1,0 +1,112 @@
+$padding = 20px
+$margin = 10px
+$border = 1px solid #999
+$border-radius = 5px
+
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  background: #fff
+  font-family: 'Arial', helvetica, sans-serif
+  padding: $padding
+  font-family: "niveau-grotesk",sans-serif
+
+.header 
+  margin-bottom: $margin
+  text-align: center
+  
+  ul
+    padding: 0
+  
+  img
+    display: block
+    margin: 0 auto
+    max-width: 90%
+    
+.header-info
+  list-style-type: none
+  
+  li
+    padding: 0 $padding
+    font-size: 20px
+    text-transform: uppercase
+    
+  a
+    text-decoration: none
+    color: #3D55A5
+
+    &:active
+    &:visited
+      color: red
+
+.right
+  float: right
+  
+.container
+  max-width: 1100px
+  margin: 0 auto
+
+.cell
+  display: block
+  position: relative
+  background-color: #3D55A5
+  border: $border
+  border-radius: $border-radius
+  margin: $margin 0
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+  &.content
+    display: inline-block
+  
+.cell-header
+  border-bottom: $border
+  padding: 0 $padding
+  
+  h2
+    color: #fff
+    line-height: 30px
+  
+.cell-body
+  background-color: #fff
+  position: relative
+  display: block
+  padding: $padding
+  
+  &.images 
+    padding: 0 $padding
+  
+  &:before,
+  &:after
+    content: ""
+    display: table
+  
+  &:after 
+    clear: both
+  
+  p
+    line-height: 1.4
+    
+  .image-list
+    padding: 0
+    &:before,
+    &:after
+      content: ""
+      display: table
+    
+    &:after 
+      clear: both
+      
+    li
+      width 50%
+      display: inline-block
+      float: left
+      
+      img
+        padding: 0 5px 5px 5px
+        width: 100%
+        height: auto
+    
+    
