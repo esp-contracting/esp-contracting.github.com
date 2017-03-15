@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <!-- FONTS -->
     <script src="https://use.typekit.net/byc3iqf.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-		<script type="text/javascript" src="./js/instafeed.js"></script>
+	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	  <script type="text/javascript" src="vendor/instafeed.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+          clientId: ' 9fc7c8555aa8481fa8b10683b21b3dee'
+      });
+      feed.run();
+    </script>
 </head>
 <body>
   <div class="container">
@@ -53,14 +59,14 @@
 					</header>
 					<section class="cell-body images">
 						<h2>Refinised Basement</h2>
-						<ul class="image-list">
+<!-- 						<ul class="image-list">
 							<li><img src="/src/images/basement_1_2.jpg"></li>
 							<li><img src="/src/images/basement_1_3.jpg"></li>
 							<li><img src="/src/images/basement_1_4.jpg"></li>
 							<li><img src="/src/images/basement_1_5.jpg"></li>
 							<li><img src="/src/images/basement_1_6.jpg"></li>
 							<li><img src="/src/images/basement_1_7.jpg"></li>
-						</ul>
+						</ul> -->
 						<div id="instafeed"></div>
 					</section>
 		    </article>
